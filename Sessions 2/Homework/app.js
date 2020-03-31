@@ -93,4 +93,18 @@
 //     }
 // }
 
-// Bài 6: 
+// Bài 6:
+// let loop=true;
+// while (true){
+//     let randomString = prompt(` Nhập một chuỗi bất kỳ`);
+//     let a = ``;
+//     for ( let i =randomString.length-1 ; i>=0; i--){
+//         a = a + randomString[i];
+//     }
+//     console.log(a);
+//     let user = prompt(` Bạn có muốn tiếp tục chương trình không? yes hoặc no`);
+//     if (user == `no`){
+//     break;
+//     }
+// }
+
