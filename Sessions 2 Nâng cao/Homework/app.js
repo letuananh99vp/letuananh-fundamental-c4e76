@@ -19,7 +19,6 @@
 // if (n<2){
 //     console.log(`False`);
 // }
-// else if (n===2) console.log(`True`);
 // else {
 //     for (let i=2;i<n-1;i++){
 //         if(n%i===0){
@@ -28,21 +27,28 @@
 //             break;
 //         }
 //     }
+//     if (loop===0){
+//         console.log(`True`);
 // }
-// if (loop===0){
-//     console.log(`True`);
 // }
 
 // Bai 4:
 // let fn = Number(prompt(` Nhập vào số bất kỳ:`));
 // let f0 = 0;
 // let f1 = 1;
-// let so = new Array();
-// for( let i=2; i<fn;i++){
-//     so[0] = Number(f0);
-//     so[1] = Number(f1);
-//     so[i] = so[i-1] + so[i-2];
-//     console.log(so[i]);
+// if (fn==0){
+//     console.log(0);
+// }else if (fn==1){
+//     console.log(1)
+// } else {
+//     let i=2,f;
+//     while (i<=fn){
+//         f = f0+f1;
+//         f0=f1;
+//         f1=f;
+//         i++;
+//     }
+//     console.log(` Phần tử thứ ${fn} là: ${f}`);
 // }
 
 // Bai 5
@@ -53,6 +59,32 @@
 //     a=a+x;
 //     }
 //     console.log(a);
+
+// Bai 7
+// Cach 1:
+// let m = Number(prompt(` Nhập vào chiều rộng:`));
+// let n = Number(prompt(` Nhập vào chiều dài:`));
+// for (i=0;i<m;i++){
+//     for(j=0;j<n;j++){
+//         document.write(`*`)
+//     }
+//     document.write(`<br>`);
+// }
+
+// Cach 2
+// let m = Number(prompt(` Nhập vào chiều rộng:`));
+// let n = Number(prompt(` Nhập vào chiều dài:`));
+// i=1;
+// while (i<=m){
+//     j=1;
+//     while(j<=n){
+//         document.write(`*`);
+//         j++;
+//     }
+//     document.write(`<br>`);
+//     i++;
+// }
+
 
 // Bai 8
 // for (let i=0;i<=36;i++){
