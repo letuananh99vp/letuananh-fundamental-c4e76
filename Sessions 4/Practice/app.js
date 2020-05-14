@@ -120,16 +120,6 @@
 // C,R,U,D
 
 // ung dung phone list
-const phonelist = [
-    {
-        name: 'Ngoc',
-        phone: '0123456789',
-    },
-    {
-        name: 'Lam',
-        phone: '0978654321',
-    },
-];
 // C: Cho nguoi dung nhap vao ten va sdt moi
 // R: in ra toan bo ten va sdt theo dang: ten - sdt
 // U: cho ng dung tim theo ten. neu tim thay -> cho update ten va sdt
@@ -139,58 +129,78 @@ const phonelist = [
 // sau moi lan thuac hien thao tac nay thi deu in ra toan bo cac sdt theo dang R
 // while -> de chay vo han
 // E -> thoat ct
-function showAll(arr){
-    for(i=0;i<arr.length;i++){
-        console.log(`${arr[i].name}-${arr[i].phone}`);
-    }
-}
-function checkExist(arr,search){
-    let foundIndex = -1;
-    for(let i=0;i<arr.length;i++){
-        if(arr[i].name===search){
-            foundIndex=1;
-        }
-    }
-    return foundIndex;
-}
-let user = prompt('Chon C/R/U/D').toLowerCase();
-if(user =='c'){
-    const username = prompt('Nhap vao ten');
-    const userphone = prompt('Nhap vao sdt');
-    const newphone = {
-        name: username,
-        phone: userphone,
-    }
-    phonelist.push(newphone);
-    showAll(phonelist);
-} else if(user=='r'){
-    showAll(phonelist);
-} else if(user=='u'){
-    const a = prompt('Nhap vao ten muon tim');
-    let found = false;
-    for(i=0;i<phonelist.length;i++){
-        if( phonelist[i].name==a){
-            phonelist[i].name= prompt('New name');
-            phonelist[i].phone= prompt('New phone');
-            found = true;
-            showAll(phonelist);
-        } 
-    }
-    if(found === false){
-        console.log('Khong tim thay');
-    }
-} else if(user=='d'){
-    const a = prompt('Nhap vao ten muon tim');
-    let found = false;
-    for(i=0;i<phonelist.length;i++){
-        if( phonelist[i].name==a){
-            phonelist.splice(i,1);
-            found=true;
-            showAll(phonelist);
-        } 
-    }
-    if(found === false){
-        console.log('Khong tim thay');
-    }
-} else if(user=='e') console.log('ket thuc');
+// const phonelist = [
+//     {
+//         name: 'Ngoc',
+//         phone: '0123456789',
+//     },
+//     {
+//         name: 'Lam',
+//         phone: '0978654321',
+//     },
+// ];
+// function showAll(arr){
+//     for(i=0;i<arr.length;i++){
+//         console.log(`${arr[i].name}-${arr[i].phone}`);
+//     }
+// }
+// function checkExist(arr,search){
+//     let foundIndex = -1;
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i].name===search){
+//             foundIndex=1;
+//         }
+//     }
+//     return foundIndex;
+// }
+// let user = prompt('Chon C/R/U/D').toLowerCase();
+// if(user =='c'){
+//     const username = prompt('Nhap vao ten');
+//     const userphone = prompt('Nhap vao sdt');
+//     const newphone = {
+//         name: username,
+//         phone: userphone,
+//     }
+//     phonelist.push(newphone);
+//     showAll(phonelist);
+// } else if(user=='r'){
+//     showAll(phonelist);
+// } else if(user=='u'){
+//     const a = prompt('Nhap vao ten muon tim');
+//     let found = false;
+//     for(i=0;i<phonelist.length;i++){
+//         if( phonelist[i].name==a){
+//             phonelist[i].name= prompt('New name');
+//             phonelist[i].phone= prompt('New phone');
+//             found = true;
+//             showAll(phonelist);
+//         } 
+//     }
+//     if(found === false){
+//         console.log('Khong tim thay');
+//     }
+// } else if(user=='d'){
+//     const a = prompt('Nhap vao ten muon tim');
+//     let found = false;
+//     for(i=0;i<phonelist.length;i++){
+//         if( phonelist[i].name==a){
+//             phonelist.splice(i,1);
+//             found=true;
+//             showAll(phonelist);
+//         } 
+//     }
+//     if(found === false){
+//         console.log('Khong tim thay');
+//     }
+// } else if(user=='e') console.log('ket thuc');
 
+// ung dung phone list
+// C: Cho nguoi dung nhap vao ten va sdt moi
+// R: in ra toan bo ten va sdt theo dang: ten - sdt
+// U: cho ng dung tim theo ten. neu tim thay -> cho update ten va sdt
+// Neu ko tim thay -> in ra ko tim thay
+// D: cho ng dung tim theo ten. Neu tim thay -> cho delete
+// Neu khong -> in ra ko tim thay
+// sau moi lan thuac hien thao tac nay thi deu in ra toan bo cac sdt theo dang R
+// while -> de chay vo han
+// E -> thoat ct
