@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        /* Code CSS */
+        /* 
+        Cấu trúc: 
+            selector{
+                thuộc tính 1: giá trị 1;
+                thuộc tính 2: giá trị 2;
+                thuộc tính n: giá trị n;
+            }
+            Selector: Lựa chọn những phần tử cần style
+            Thuộc tính: Đặc điểm của phần tử
+                Giá trị: 
+            1. Dịnh dạng chữ: màu, cỡ chứ, font chữ, kiểu chữ, màu nền chữ
+            color: Tên màu => mã màu => rgb
+         */
+         /* h1{
+             color: rgb(1, 1, 1);
+             font-size: 50px;
+             font-family:'Dancing Script', cursive;  */
+             /* Kiểu chữ: đậm nhạt, độ nghiêng, chữ gạch chân */
+             /* font-weight:lighter;
+             font-style: italic;
+             text-decoration: underline;
+             background-color: green;
+             text-transform: capitalize;
+         } */
+         /* 2. Định dạng khối (box model) 
+         - Đường viền, màu viền
+         - Kích thước khối: rộng, cao
+         - Khoảng cách
+         */
+         /* div{
+            width: 200px;
+            height: 200px; */
+            /* border: 1px solid violet ; */
+            /* border-width: 5px;
+            border-color: violet;
+            border-style: solid;
+            background-color: teal; */
+            /* border-radius: 50%; */
+            /* line-height: 200px;
+            text-align: center;
+            color: white;
+            overflow:hidden;
+            background-image: url(./anh.jpg);
+            background-size: 10% 10%;
+            background-repeat: no-repeat;
+            background-position: center; */
+            /* margin: 30px 0px 30px 50px; */
+            /* margin-top: 30px;
+            padding: 30px 50px 30px 30px;
+         } */
+         /* #red-text{
+             color: red;
+             background-color: seagreen;
+         }
+         .div1{
+             font-weight: bold;
+             text-transform: capitalize;
+         }
+         .div1.text-blue{
+             color: blue;
+         }
+         #red-text span{
+            color: coral;
+         } */   
+    </style>
+    <style>
+        div{
+            background-color: orange;
+            color: white;
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+        }
+        #flex-container{
+            display: flex;
+            /* flex-direction: row-reverse; */
+            background-color: blue;
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            height: 500px;
+            align-items: center;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="div1 text-blue">Một hai ba bốn năm sáu bảy</div>
+    <div>tám chín mười</div>
+    <div class="div1">Một hai ba</div>
+    <div id='red-text'>Mười chín tám bảy sáu
+        <span>năm bốn ba hai một</span>
+    </div>
+    <div>Cháu lên ba
+        <span> Cháu đi mẫu giáo</span>
+    </div> -->
+    <section id="flex-container">
+        <div>Khối 1</div>
+        <div>Khối 2</div>
+        <div>Khối 3</div>   
+    </section>
+</body>
+</html>
