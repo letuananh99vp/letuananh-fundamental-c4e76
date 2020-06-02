@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title{
+    height: 100px;
+    width: auto;
+    background-color: blue;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 200px;
+    height: 400px;
+}
+.header .menu1{
+    background-color:bisque;
+}
+
+.header .menu2{
+}
+.header .menu2 .div{
+    display: flex;
+    
+}
+.header .menu2 .div .div1,
+.header .menu2 .div .div2{
+    background-color: gold;
+    width: calc((100%-20px)/2);
+    height: 100px;
+}
+.header .menu2 .img{
+    background-color: pink;
+}
+.header .menu3{
+    background-color:bisque;
+}

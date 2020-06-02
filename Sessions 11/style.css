@@ -1,0 +1,99 @@
+/* .button{
+    display: flex;
+}
+.button #minus{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    text-align: center;
+    line-height: 20px;
+    margin: 10px;
+    color: white;
+}
+.button #add{
+    width: 20px;
+    height: 20px;
+    background-color:red;
+    text-align: center;
+    line-height: 20px;
+    margin: 10px;
+    color: white;
+}
+.button #number{
+    margin: 10px;   
+} */
+
+/* .button #color{
+    display: flex;
+}
+.button #but{
+    width: 100px;
+    height: 20px;
+    background-color:green;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+.button #black{
+    width: 100px;
+    height: 50px;
+    background-color:black;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+}
+.button #text{
+    margin: 20px; 
+}
+.button #red{
+    width: 100px;
+    height: 50px;
+    background-color:red;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.text{
+    width: 400px;
+    height: 200px;
+    background-image: url(https://img.freepik.com/free-vector/colorful-abstract-background_23-2148469145.jpg?size=626&ext=jpg);
+    text-align: center;
+    line-height: 200px;
+    margin: auto;
+    color:black;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.box #yes{
+    background-color: seagreen ;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 20px;
+    color: white;
+}
+.box #no{
+    background-color: tomato;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 20px;
+    color: white;
+}
