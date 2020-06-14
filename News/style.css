@@ -15,7 +15,7 @@
 } 
 .all{
     display: flex;
-    margin-left: 150px;
+    margin-left: 350px;
 }
 .line{
     background-color: orange;
@@ -90,7 +90,7 @@
 h2{
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 150px;
+    margin-left: 350px;
 }
 .right{
     margin-left: 20px;
