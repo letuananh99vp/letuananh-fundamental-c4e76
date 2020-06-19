@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form sign up -->
+    <section class="form-sign-up-contairner">
+        <form class="form-sign-up">
+            <h1>Đăng ký</h1>
+            <div class="content-input">
+                <input type="text" name="fullname" placeholder="full name">
+                <span></span>
+                <div class="alert-error" id="fullname-error"></div>
+            </div>
+
+            <div class="content-input">
+                <input type="text" name="email" placeholder="email">
+                <span></span>
+                <div class="alert-error" id="email-error"></div>
+            </div>
+
+            <div class="content-input">
+                <input type="password" name="password" placeholder="password">
+                <span></span>
+                <div class="alert-error" id="fullname-error"></div>
+            </div>
+
+            <div class="content-input">
+                <input type="password" name="confirmPassword" placeholder="confirm">
+                <span></span>
+                <div class="alert-error" id="fullname-error"></div>
+                <div class="alert-success" id="sign-up-success"></div>
+            </div>
+
+            <!-- button submit -->
+            <button type="submit" id="btn-sign-up" class="logbtn">Register</button>
+        </form>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCM6o_2jjZcdflH1gD3wvkBtAI0lsRBROE",
+    authDomain: "lakillah-86781.firebaseapp.com",
+    databaseURL: "https://lakillah-86781.firebaseio.com",
+    projectId: "lakillah-86781",
+    storageBucket: "lakillah-86781.appspot.com",
+    messagingSenderId: "1065174652158",
+    appId: "1:1065174652158:web:46aa7b2406919564ff01af",
+    measurementId: "G-QNTP47J71F"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+
+</body>
+</html>
